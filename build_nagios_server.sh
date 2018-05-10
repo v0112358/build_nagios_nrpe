@@ -123,7 +123,7 @@ cd ../nagios-plugins-2.2.1
 ./configure --with-nagios-user=nagios --with-nagios-group=nagios --with-openssl=/usr
 make all
 make install
-wget -O /etc/httpd/conf.d/nagios.conf https://upload.vinahost.vn/K6Bp6/nagios.con
+wget -O /etc/httpd/conf.d/nagios.conf https://raw.githubusercontent.com/vynt-kenshiro/build_nagios_nrpe/master/nagios.conf
 
 htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
 service nagios restart
